@@ -38,7 +38,5 @@ func TestGetApiKey(t *testing.T) {
 				t.Fatalf("api keys do not match. Expected: %v, Got: %v", tc.parsedKey, apiKey)
 			}
 		}
-		
-		t.Fatalf("testing github workflow")
 	}
 }
