@@ -8,19 +8,19 @@ import (
 )
 
 func TestGetApiKey(t *testing.T) {
-	tt := []struct{
-		apiKey string
-		parsedKey string
-		shouldError bool 
+	tt := []struct {
+		apiKey      string
+		parsedKey   string
+		shouldError bool
 	}{
 		{
-			apiKey: "someapikey",
-			parsedKey: "",
+			apiKey:      "someapikey",
+			parsedKey:   "",
 			shouldError: true,
 		},
 		{
-			apiKey: "ApiKey someotherapikey",
-			parsedKey: "someotherapikey",
+			apiKey:      "ApiKey someotherapikey",
+			parsedKey:   "someotherapikey",
 			shouldError: false,
 		},
 	}
